@@ -1,10 +1,20 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { fetch } from './api/api'
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
+  const [about, setAbout] = useState<string>('Loading...')
+
+  // Example of fetching local JSON data
+  useEffect(() => {
+    fetch('/data/about_us.json')
+      .then(res => res.json())
+      .then(data => setAbout(data.description || JSON.stringify(data)))
+      .catch(() => setAbout('Failed to load'))
+  }, [])
 
   return (
     <>
@@ -28,6 +38,8 @@ function App() {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <h1>About Us</h1>
+      <p>{about}</p>
     </>
   )
 }
