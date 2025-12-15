@@ -1,0 +1,14 @@
+{
+    "title": "About Us",
+    "description": "Learn more about our company's mission, values, and team.",
+    "updated_ts": "2024-06-15T10:30:00Z",
+    "created_ts": "2024-05-01T09:00:00Z",
+    "content": {
+        "text": "NNI Engineering DC is dedicated to fostering innovation and excellence in engineering. Our team is composed of passionate professionals committed to delivering top-notch solutions and services to our clients. We believe in the power of collaboration, integrity, and continuous learning to drive success and make a positive impact in the industry.",
+        "assets": [
+            "office_1.jpg",
+            "team_meeting.jpg",
+            "project_collaboration.jpg"
+        ]
+    }
+}

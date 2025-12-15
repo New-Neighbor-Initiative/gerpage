@@ -1,0 +1,13 @@
+{
+    "title": "About Us",
+    "description": "Learn more about our company's mission, values, and team.",
+    "updated_ts": "2024-06-15T10:30:00Z",
+    "created_ts": "2024-05-01T09:00:00Z",
+    "content": {
+        "email": "nniengineeringdc@gmail.com",
+        "instagram": "https://www.instagram.com/nniengineeringdc/",
+        "assets": [
+            "instagram.jpg"
+        ]
+    }
+}
