@@ -1,0 +1,30 @@
+{
+    "title": "Our past events",
+    "description": "Learn more about our organization's mission, values, and team.",
+    "updated_ts": "2024-06-15T10:30:00Z",
+    "created_ts": "2024-05-01T09:00:00Z",
+    "content": {
+        "events": [
+            {
+                "name": "New Year's Celebration",
+                "date": "2024-01-01",
+                "location": "Central Park",
+                "description": "Join us for a festive New Year's celebration with music, food, and fireworks!",
+                "photos": [
+                    "winter_festival_1.jpg",
+                    "winter_festival_2.jpg"
+                ]
+            },
+            {
+                "name": "Winter Festival",
+                "date": "2024-01-15",
+                "location": "Downtown Plaza",
+                "description": "Experience the magic of winter with ice skating, holiday markets, and live performances.",
+                "photos": [
+                    "winter_festival_1.jpg",
+                    "winter_festival_2.jpg"
+                ]
+            }
+        ]
+    }
+}

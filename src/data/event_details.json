@@ -1,0 +1,47 @@
+{
+    "title": "Summer Gala",
+    "description": "Join us for an evening of celebration, networking, and entertainment at our annual Summer Gala.",
+    "updated_ts": "2024-06-15T10:30:00Z",
+    "created_ts": "2024-05-01T09:00:00Z",
+    "content": {
+        "date": "2024-07-15",
+        "time": "18:00",
+        "maps_integration_link": "https://maps.example.com/summer_gala_location",
+        "location": {
+            "venue": "Grand Ballroom, City Hotel",
+            "address": "123 Main St, Metropolis"
+        },
+        "agenda": [
+            {
+                "time": "18:00",
+                "activity": "Welcome Reception"
+            },
+            {
+                "time": "19:00",
+                "activity": "Dinner Service"
+            },
+            {
+                "time": "20:00",
+                "activity": "Keynote Speech"
+            },
+            {
+                "time": "21:00",
+                "activity": "Live Entertainment"
+            },
+            {
+                "time": "22:30",
+                "activity": "Closing Remarks"
+            }
+        ],
+        "speakers": [
+            {
+                "name": "Jane Doe",
+                "topic": "The Future of Innovation"
+            },
+            {
+                "name": "John Smith",
+                "topic": "Sustainability in Business"
+            }
+        ]
+    }
+}
