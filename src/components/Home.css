@@ -1,0 +1,11 @@
+#home-section{
+    background-color: #FECD43;
+    color: black;
+    margin-top: 60px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+

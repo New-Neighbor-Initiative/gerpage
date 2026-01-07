@@ -1,0 +1,34 @@
+#team-section{
+    height: 100vh;
+    background-color: #FECD43;
+}
+
+.bubble-ppl {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    padding: 5px 0;
+    margin: 50px 0 10px 0;
+    height: 20rem;
+    width: 15rem;
+}
+
+.dept{
+    max-width: calc(15rem * 4 + 2rem * 3) !important; /* width of 4 cards + gaps */
+    margin: 4rem auto !important;              /* center horizontally */
+    text-align: center !important;
+    align-items: center;
+}
+.dept-ppl {
+    display: grid !important;
+    grid-template-columns: repeat(4, 15rem) !important;
+    justify-content: center !important;
+    gap: 2rem !important;
+    width: 100% !important;
+  }
+  
+  
+
+.dept-title{
+    text-transform: capitalize;
+}

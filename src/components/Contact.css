@@ -1,0 +1,21 @@
+#contacts-section{
+    height: 100vh;
+    background-color: #FECD43;
+    padding: 0%;
+    margin: 0%;
+    color: black;
+}
+
+#footer{
+    position: fixed;
+    bottom: 0;
+}
+
+.bubble-contacts {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    padding: 5px 0;
+    margin: 50px 0 10px 0;
+    height: 5rem;
+}

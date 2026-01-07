@@ -1,0 +1,30 @@
+#about-section{
+    background-color: #FECD43;
+    color: black;
+    height: 100vh;
+}
+
+.bubble-about {
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    padding: 5px 0;
+    margin: 50px 0 10px 0;
+    height: 20rem;
+}
+
+#statistics{
+    height: 20rem;
+    width: 15rem;
+}
+
+#mission{
+    width: 40rem;
+    padding: 1rem 2rem;
+}
+
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 20rem;
+}
