@@ -67,7 +67,7 @@ function ActivitySearch({ onActivitySelected }: Props) {
           <div className="activity-card" key={activity.id}>
             <img
               className="activity-image"
-              src={`${import.meta.env.VITE_PUBLIC_URL}/icons/${activity.name.toLowerCase().replace(/ /g, "_")}.svg`}
+              src={`/icons/${activity.name.toLowerCase().replace(/ /g, "_")}.svg`}
               alt={activity.name.toLowerCase().replace(/ /g, "_")}
             />
 
