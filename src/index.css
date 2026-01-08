@@ -66,3 +66,296 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+
+
+/*color schemes: #515a47(green), #d7be82(beige), #7a4419(brown), #755c1b(yellow-green), #400406(maroon)*/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html, section{
+  margin: 0;
+  padding: 0;
+  font-family: "National Park", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.title {
+  font-size: 2rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ===== NavBar ===== */
+.navbar {
+  position: fixed;        /* stick to the viewport */
+  top: 0;
+  left: 0;
+  right: 0;
+
+  background: #6e85b7; 
+  padding: 0.2rem 0;
+  text-align: center;
+
+  z-index: 1000;          /* stay above everything */
+}
+
+
+.navbar-link{
+  font-size: 1.8em;
+  padding: 5px 50px;
+  color: black;
+  text-decoration: none;
+  font-family: "National Park", sans-serif;
+  background: none;
+  border: none;
+}
+
+/* ===== Home Page ===== */
+.home-page-whole{
+  height: 100vh;
+  background-image: url('./home-bg.jpg');
+  background-size: cover;
+  text-align: center;
+}
+
+.home-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #7a4419;
+  font-size: 2em;
+  opacity: 1;
+  background-color: rgb(255, 255, 255, 0.3);
+}
+
+.start-button{
+  margin-top: 30px;
+  background-color: #7a4419;
+  border-radius: 25px;
+  font-size: xx-large;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.home-page p{
+  width: 680px;
+  text-align: center;
+}
+
+/* ===== Activities page ===== */
+
+.activities-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem 5rem;
+  background-color: #d7be82;
+  text-align: center;
+  min-height: 100vh;
+}
+
+
+
+.activities-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 2rem 1.5rem; 
+}
+
+.search-input {
+  width: 350px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #888;
+  margin: 30px auto;
+  font-size: 16px;
+  display: block;
+}
+
+
+.activity-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.activity-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+}
+
+.activity-button {
+  margin-top: 0.5rem;
+  border: none;
+  background: none;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
+  max-width: 120px;
+  overflow-wrap: break-word;
+  line-height: 1.2;
+}
+
+.activity-button:hover {
+  text-decoration: underline;
+}
+
+.back_button{
+  border-radius: 1rem;
+  padding: 0.5rem 2rem;
+  margin: 1rem 2rem;
+
+}
+
+.park_title{
+  margin: 1.5rem;
+}
+
+.park_description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* ===== Contact Page ===== */
+.Contact{
+  height: 100vh;
+  background-color: #d7be82;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 2rem 5rem;
+}
+
+#name, #email{
+  width: 500px;
+  margin-bottom: 1rem;
+}
+
+#message{
+  width: 500px;
+  height: 300px;
+  line-height: normal;
+  padding: 4px;
+  vertical-align: top;
+  margin-bottom: 1rem;
+}
+
+#submit{
+  text-align: center;
+  
+}
+
+#submit input{
+  background-color: #c8e6d6;
+  border: none;
+  padding: 12px 40px;
+  border-radius: 999px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: none;
+  font-weight: bold;
+}
+
+.Contact label{
+  font-weight: bold;
+}
+
+
+/* ===== About Page ===== */
+
+.About, .everypark, .goal{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem;
+  background-color: #a3c9a6;
+}
+
+.goal{
+  background-color: #eee8ae;
+  border-radius: 20px;
+  padding: 3rem;
+  margin: 3rem;
+  text-align: center;
+  width: 500px;
+}
+
+.everypark{
+  background-color: #eee8ae;
+  border-radius: 20px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.head{
+  font-size: x-large;
+  padding-bottom: 1rem;
+}
+
+.parks-grid {
+  column-count: 4;      
+  column-gap: 40px;                
+  column-rule: 2px solid black;    
+  list-style: none;                
+  gap: 100rem 2rem;
+}
+
+.park-item{
+  margin-bottom: 2rem;
+}
+
+
+
+/* ===== Park List organizer ===== */
+
+.park-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));  
+  gap: 8px 40px;           
+  max-width: 900px;
+  margin: 0 auto;          
+  padding: 0;             
+  list-style: disc;       
+  text-align: left;        
+}
+
+.park-list li {
+  margin: 0;
+}
+
+.park-list li button {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: left;     
+}
+
+.park-list li button:hover{
+  text-decoration: underline;
+}
+
+
+
+
