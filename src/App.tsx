@@ -1,8 +1,14 @@
-import { useEffect, useState } from 'react'
+import { Activity, useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { fetch } from './api/api'
 import './App.css'
+
+import Navbar from "./components/NavBar";
+import Home from './components/Home';
+import Contact from './components/Contact';
+import About from './components/About'
+import Activities from './components/Activities'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -18,6 +24,11 @@ function App() {
 
   return (
     <>
+      <Navbar />
+      <Home />
+      <Activities />
+      <About />
+      <Contact />
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
