@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { fetch } from './api/api'
-import './App.css'
+// import './App.css'
 import Home from "./components/Home"
 import NavBar from "./components/NavBar"
 import About from "./components/About"
 import Team from "./components/Team"
 import Contact from "./components/Contact"
+import Footnote from "./components/Footnote"
 
 function App() {
   const [count, setCount] = useState(0)
@@ -28,6 +27,7 @@ function App() {
       <About />
       <Team />
       <Contact />
+      <Footnote />
     </>
   )
 }
