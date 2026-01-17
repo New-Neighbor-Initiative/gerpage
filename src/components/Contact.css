@@ -1,21 +1,37 @@
-#contacts-section{
-    height: 100vh;
+.contact-section{
+    height: max-content;
     background-color: #FECD43;
-    padding: 0%;
-    margin: 0%;
+}
+
+#top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
     color: black;
 }
 
-#footer{
-    position: fixed;
-    bottom: 0;
+.contact-title{
+    text-transform: uppercase;
 }
 
-.bubble-contacts {
+.contact-inputs{
+    height: 50px;
+    width: 400px;
+    border: none;
+    outline: none;
+}
+
+#message-area{
+    height: 140px;
+}
+
+.contact-button{
+    font-size: 20px;
     background-color: white;
-    border-radius: 10px;
-    width: 80%;
-    padding: 5px 0;
-    margin: 50px 0 10px 0;
-    height: 5rem;
+    color: #1B343D;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
 }

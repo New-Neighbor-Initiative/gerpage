@@ -13,17 +13,25 @@ function Contact(){
 
     if (!contact) return <p>Loading...</p>;
     return(
-        <div id="contacts-section">
-            <div className="Contact" id="contact-section">
-                <h2 className="title">CONTACT US</h2>
+        <div className="contact-section">
+            <div id="top-section">
+                <div className="contact-title">
+                    <h2>CONTACT US</h2>
+                    <hr />
+                </div>
+                <input type="text" name="name" placeholder="Your Name" className = "contact-inputs" required/>
+                <input type="email" name="email" placeholder="Your Email" className = "contact-inputs" required/>
+                <textarea name="" placeholder = "Your Message" className = "contact-inputs" id = "message-area" required></textarea>
+                <button type = "submit" className = "contact-button">Submit</button>
             </div>
-            <div className="bubble-contacts" id="footer">
-                <p><img src="gmail-logo.webp"/> Email: {contact.content.email}</p>
-                <p>Instagram: {contact.content.email}</p>
+            <div className="footnote-section">
+                <img src="https://drive.google.com/drive/u/0/folders/1zXwKehlfIlkOZCNajgZ4PKXNq6U1mTJD" alt="logo" />
             </div>
         </div>
+        
 
     )
+
 }
 
 export default Contact;

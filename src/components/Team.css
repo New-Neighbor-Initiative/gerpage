@@ -1,6 +1,7 @@
 #team-section{
-    height: 100vh;
+    height: max-content;
     background-color: #FECD43;
+
 }
 
 .bubble-ppl {
@@ -8,27 +9,99 @@
     border-radius: 10px;
     width: 80%;
     padding: 5px 0;
-    margin: 50px 0 10px 0;
-    height: 20rem;
-    width: 15rem;
+    margin: 50px 5px 10px 5px;
+    height: 15rem;
+    width: 10rem;
+    /* display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory; */
 }
 
-.dept{
-    max-width: calc(15rem * 4 + 2rem * 3) !important; /* width of 4 cards + gaps */
-    margin: 4rem auto !important;              /* center horizontally */
-    text-align: center !important;
-    align-items: center;
+.bubble-ppl img{
+    max-height: 7rem;
+    margin-top: 1rem;
+    border-radius: 10px;
 }
+
+.dept{       
+    text-align: center;
+    align-items: center;
+    background-color: antiquewhite;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+    width: 30rem;
+}
+
+.dept-title {
+    text-transform: uppercase; 
+}
+
 .dept-ppl {
-    display: grid !important;
-    grid-template-columns: repeat(4, 15rem) !important;
-    justify-content: center !important;
-    gap: 2rem !important;
-    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    overflow-x: visible;   
+    margin: 0;             
+    padding: 0 5rem;       
+    flex-wrap: wrap;       
   }
   
-  
 
-.dept-title{
-    text-transform: capitalize;
+
+/* slider */
+.container {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    /* max-width: 48rem; */
+    max-width: max-content;
+    margin: 0 auto;
+}
+
+
+
+.slider {
+    display: flex;
+    height: max-content;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    border-radius: 0.5rem;
+    /* hide scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.slider-content {
+    display: flex;
+}
+
+.slider::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+
+
+.slide-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.slide-btn.prev {
+    left: 10px;
+}
+
+.slide-btn.next {
+    right: 10px;
 }
