@@ -30,7 +30,6 @@ function Events(){
                 <h3 className="schedule-date">{events.content.date}</h3>
                 <hr className="schedule-divider" />
 
-                {/* for loop*/}
                 {events.content.agenda.map((item: any, index: number) => (
                     <div key={index} className="schedule-row">
                     <div className="schedule-time">{item.time}</div>
