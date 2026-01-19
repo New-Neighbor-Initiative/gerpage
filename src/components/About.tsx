@@ -1,4 +1,4 @@
-import "./About.css"
+import "./About.css";
 import { useEffect, useState } from "react";
 import { fetch as apiFetch } from "../api/api";
 

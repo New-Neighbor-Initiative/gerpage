@@ -13,7 +13,7 @@ function Contact(){
 
     if (!contact) return <p>Loading...</p>;
     return(
-        <div className="contact-section">
+        <div className="contact-section" id="contact-section">
             <div id="top-section">
                 <div className="contact-title">
                     <h2>CONTACT US</h2>

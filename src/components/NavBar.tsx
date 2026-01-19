@@ -2,7 +2,7 @@ import Toggle from "./Toggle"
 import "./NavBar.css"
 
 function NavBar(){
-    const scrollTo = (id) => {
+    const scrollTo = (id: string) => {
         const el = document.getElementById(id);
         if (el) {
           el.scrollIntoView({ behavior: "smooth" });

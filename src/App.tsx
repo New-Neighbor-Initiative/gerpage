@@ -7,6 +7,7 @@ import About from "./components/About"
 import Team from "./components/Team"
 import Contact from "./components/Contact"
 import Footnote from "./components/Footnote"
+import Events from './components/Events'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -26,6 +27,7 @@ function App() {
       <Home />
       <About />
       <Team />
+      <Events />
       <Contact />
       <Footnote />
     </>
