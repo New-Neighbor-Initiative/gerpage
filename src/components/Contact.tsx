@@ -22,7 +22,7 @@ function Contact(){
                 <input type="text" name="name" placeholder="Your Name" className = "contact-inputs" required/>
                 <input type="email" name="email" placeholder="Your Email" className = "contact-inputs" required/>
                 <textarea name="" placeholder = "Your Message" className = "contact-inputs" id = "message-area" required></textarea>
-                <button type = "submit" className = "contact-button">Submit</button>
+                <button type = "submit" className = "contact-button">SEND</button>
             </div>
             <div className="footnote-section">
                 <img src="https://drive.google.com/drive/u/0/folders/1zXwKehlfIlkOZCNajgZ4PKXNq6U1mTJD" alt="logo" />
