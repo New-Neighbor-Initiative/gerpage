@@ -1,4 +1,3 @@
-import Toggle from "./Toggle"
 import "./NavBar.css"
 
 function NavBar(){
