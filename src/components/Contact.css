@@ -1,0 +1,37 @@
+.contact-section{
+    height: max-content;
+    background-color: #FECD43;
+}
+
+#top-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+    color: black;
+}
+
+.contact-title{
+    text-transform: uppercase;
+}
+
+.contact-inputs{
+    height: 50px;
+    width: 400px;
+    border: none;
+    outline: none;
+}
+
+#message-area{
+    height: 140px;
+}
+
+.contact-button{
+    font-size: 20px;
+    background-color: #1B343D;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 20px;
+}

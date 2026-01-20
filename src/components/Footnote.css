@@ -1,0 +1,11 @@
+#footnote-section{
+    display: flex;
+    height: max-content;
+    background-color: white;
+    justify-content: center;
+}
+
+#footnote-section img{
+    height: 100px;
+    margin: 50px;
+}

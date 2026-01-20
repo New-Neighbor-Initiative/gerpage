@@ -8,6 +8,30 @@
             {
                 "name": "John Doe",
                 "position": "CEO",
+                "photo": "https://thelightcommittee.com/wp-content/uploads/elementor/thumbs/black-man-professional-headshot-in-a-suit-r42uk8vk2ohep4rskl06y2nqsq8o6kphm0k53of2k0.jpg",
+                "bio": "John has over 20 years of experience in the industry and leads the company with a vision for innovation."
+            },
+            {
+                "name": "Jane Smith",
+                "position": "CTO",
+                "photo": "jane_smith.jpg",
+                "bio": "Jane is responsible for overseeing all technical aspects and technological resources of the company."
+            },
+            {
+                "name": "John Doe",
+                "position": "CEO",
+                "photo": "john_doe.jpg",
+                "bio": "John has over 20 years of experience in the industry and leads the company with a vision for innovation."
+            },
+            {
+                "name": "Jane Smith",
+                "position": "CTO",
+                "photo": "jane_smith.jpg",
+                "bio": "Jane is responsible for overseeing all technical aspects and technological resources of the company."
+            },
+            {
+                "name": "John Doe",
+                "position": "CEO",
                 "photo": "john_doe.jpg",
                 "bio": "John has over 20 years of experience in the industry and leads the company with a vision for innovation."
             },
@@ -19,6 +43,30 @@
             }
         ],
         "interns": [
+            {
+                "name": "Alice Johnson",
+                "position": "Software Engineering Intern",
+                "photo": "alice_johnson.jpg",
+                "bio": "Alice is a computer science student passionate about developing innovative software solutions."
+            },
+            {
+                "name": "Bob Lee",
+                "position": "Marketing Intern",
+                "photo": "bob_lee.jpg",
+                "bio": "Bob is studying marketing and is excited to contribute to the company's outreach efforts."
+            },
+            {
+                "name": "Alice Johnson",
+                "position": "Software Engineering Intern",
+                "photo": "alice_johnson.jpg",
+                "bio": "Alice is a computer science student passionate about developing innovative software solutions."
+            },
+            {
+                "name": "Bob Lee",
+                "position": "Marketing Intern",
+                "photo": "bob_lee.jpg",
+                "bio": "Bob is studying marketing and is excited to contribute to the company's outreach efforts."
+            },
             {
                 "name": "Alice Johnson",
                 "position": "Software Engineering Intern",
