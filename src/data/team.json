@@ -44,39 +44,45 @@
         ],
         "interns": [
             {
-                "name": "Alice Johnson",
+                "name": "Amar",
                 "position": "Software Engineering Intern",
-                "photo": "alice_johnson.jpg",
+                "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Amar.png?raw=true",
                 "bio": "Alice is a computer science student passionate about developing innovative software solutions."
             },
             {
-                "name": "Bob Lee",
+                "name": "Anka Undraa",
                 "position": "Marketing Intern",
-                "photo": "bob_lee.jpg",
+                "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Anka_Undraa.jpg?raw=true",
                 "bio": "Bob is studying marketing and is excited to contribute to the company's outreach efforts."
             },
             {
-                "name": "Alice Johnson",
+                "name": "Anujin Enkhee",
                 "position": "Software Engineering Intern",
-                "photo": "alice_johnson.jpg",
+                "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Anujin_Enkhee.JPG?raw=true",
                 "bio": "Alice is a computer science student passionate about developing innovative software solutions."
             },
             {
-                "name": "Bob Lee",
+                "name": "Anuka San",
                 "position": "Marketing Intern",
-                "photo": "bob_lee.jpg",
+                "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Anuka_San.jpeg?raw=true",
                 "bio": "Bob is studying marketing and is excited to contribute to the company's outreach efforts."
             },
             {
-                "name": "Alice Johnson",
+                "name": "Bolor Amarbayar",
                 "position": "Software Engineering Intern",
-                "photo": "alice_johnson.jpg",
+                "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Bolor_Amarbayar.jpeg?raw=true",
                 "bio": "Alice is a computer science student passionate about developing innovative software solutions."
             },
             {
-                "name": "Bob Lee",
+                "name": "Jargalan Enkh-Otgon",
                 "position": "Marketing Intern",
-                "photo": "bob_lee.jpg",
+                "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Jargalan_Enkh-Otgon.jpeg?raw=true",
+                "bio": "Bob is studying marketing and is excited to contribute to the company's outreach efforts."
+            },
+                        {
+                "name": "Tsetsenbileg Mendbileg",
+                "position": "Marketing Intern",
+                "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Tsetsenbileg_Mendbileg.jpeg?raw=true",
                 "bio": "Bob is studying marketing and is excited to contribute to the company's outreach efforts."
             }
         ]
