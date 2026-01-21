@@ -72,12 +72,13 @@ function Team() {
                               {person.study && <p className="detail"><span className="icon">🎓</span> {person.study}</p>}
                               {person.food && <p className="detail"><span className="icon">🥟</span> {person.food}</p>}
                               {person.hobby && <p className="detail"><span className="icon">🎨</span> {person.hobby}</p>}
-                              {person.linkedin && (
-                                <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="linkedin-link">
-                                  Connect on LinkedIn
-                                </a>
-                              )}
                             </div>
+                          )}
+
+                          {person.linkedin && (
+                            <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="linkedin-link">
+                              Connect on LinkedIn
+                            </a>
                           )}
                         </div>
                       </div>

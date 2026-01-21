@@ -6,40 +6,39 @@
     "content": {
         "managing_team": [
             {
-                "name": "John Doe",
+                "name": "Urgamal Azat",
+                "position": "Founder",
+                "photo": "https://github.com/NNIDC/object-store/blob/4037fc64b65315fee945f489619fedf4477001da/managing_team/NNIFounder_Urgamal_Azat.jpeg?raw=true",
+                "bio": "Former diplomatic officer turned social entrepreneur and behavioral science enthusiast. Focused on bridging gaps in Mongolian healthcare, promoting human dignity, and preparing for the future of work. Advocate for Sustainable Development Goals.",
+                "linkedin": "https://www.linkedin.com/in/urga-azat-07134510/"
+            },
+            {
+                "name": "Temuulen Jargalsaikhan",
                 "position": "CEO",
-                "photo": "https://thelightcommittee.com/wp-content/uploads/elementor/thumbs/black-man-professional-headshot-in-a-suit-r42uk8vk2ohep4rskl06y2nqsq8o6kphm0k53of2k0.jpg",
-                "bio": "John has over 20 years of experience in the industry and leads the company with a vision for innovation."
+                "photo": "https://github.com/NNIDC/object-store/blob/4eaf497fa91411ad97504782ce5766e7d0b38fec/managing_team/NNI2026CEO_Temuulen_Jargalsaikhan.jpeg?raw=true",
+                "bio": "Sr. Associate in Project Management at Capital One, focusing on process engineering, revenue capture, and risk mitigation. Economics graduate from the University of Virginia, passionate about leveraging technology for effective problem-solving.",
+                "linkedin": "https://www.linkedin.com/in/temuulen-jargalsaikhan-388853163/"
             },
             {
-                "name": "Jane Smith",
-                "position": "CTO",
-                "photo": "jane_smith.jpg",
-                "bio": "Jane is responsible for overseeing all technical aspects and technological resources of the company."
+                "name": "Sainkhuu Enkh-Otgon",
+                "position": "Managing Team",
+                "photo": "https://github.com/NNIDC/object-store/blob/4eaf497fa91411ad97504782ce5766e7d0b38fec/managing_team/NNI2026Manager_Sainkhuu_Enkh-Otgon.jpeg?raw=true",
+                "bio": "Global health professional with experience improving breast cancer care in Sub-Saharan Africa and addressing environmental risks in rural Mongolia. Dedicated to advancing practical, equitable progress in development.",
+                "linkedin": "https://www.linkedin.com/in/sainkhuu-enkh7899/"
             },
             {
-                "name": "John Doe",
-                "position": "CEO",
-                "photo": "john_doe.jpg",
-                "bio": "John has over 20 years of experience in the industry and leads the company with a vision for innovation."
+                "name": "Sunderya Ulziibold",
+                "position": "Managing Team",
+                "photo": "https://github.com/NNIDC/object-store/blob/4eaf497fa91411ad97504782ce5766e7d0b38fec/managing_team/NNI2026Manager_Sunderya_Ulziibold.jpeg?raw=true",
+                "bio": "Boston College graduate with a dual degree in Political Science and Communications. Passionate about policy, strategic communications, storytelling, public service, and grassroots advocacy.",
+                "linkedin": "https://www.linkedin.com/in/sunderya-ulziibold/"
             },
             {
-                "name": "Jane Smith",
-                "position": "CTO",
-                "photo": "jane_smith.jpg",
-                "bio": "Jane is responsible for overseeing all technical aspects and technological resources of the company."
-            },
-            {
-                "name": "John Doe",
-                "position": "CEO",
-                "photo": "john_doe.jpg",
-                "bio": "John has over 20 years of experience in the industry and leads the company with a vision for innovation."
-            },
-            {
-                "name": "Jane Smith",
-                "position": "CTO",
-                "photo": "jane_smith.jpg",
-                "bio": "Jane is responsible for overseeing all technical aspects and technological resources of the company."
+                "name": "Joe Khosbayar",
+                "position": "Managing Team",
+                "photo": "https://github.com/NNIDC/object-store/blob/4eaf497fa91411ad97504782ce5766e7d0b38fec/managing_team/NNI2026Manager_Joe_Khosbayar.jpeg?raw=true",
+                "bio": "Software Engineer specializing in building Enterprise Payments capabilities.",
+                "linkedin": "https://www.linkedin.com/in/joekhosbayar/"
             }
         ],
         "interns": [
