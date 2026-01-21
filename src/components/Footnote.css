@@ -1,11 +1,15 @@
-#footnote-section{
+#footnote-section {
     display: flex;
-    height: max-content;
+    width: 100%;
     background-color: white;
-    justify-content: center;
+    /* Or match section color logic if needed, but keeping white as per previous */
+    padding: 0;
+    overflow: hidden;
 }
 
-#footnote-section img{
-    height: 100px;
-    margin: 50px;
+.footer-detail {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }

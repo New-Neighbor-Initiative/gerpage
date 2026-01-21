@@ -1,13 +1,14 @@
 import "./Footnote.css"
+import footerDetail from "../assets/footer_full_width_detail.svg";
 
-function Footnote(){
-    
-    return(
+function Footnote() {
+
+    return (
         <div id="footnote-section">
-            <img src="/img/logo.png" alt="NNI logo" />
+            <img src={footerDetail} alt="Footer Detail" className="footer-detail" />
         </div>
     )
-    
+
 }
 
 export default Footnote;
