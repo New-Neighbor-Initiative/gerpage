@@ -35,7 +35,7 @@ function Events() {
                 </div>
                 <div className="hero-image-wrapper">
                     <img
-                        src="/img/events-placer.webp"
+                        src="https://github.com/NNIDC/object-store/blob/0367ac37e876f96b365c224168d061c0eba3bc08/assets/flyer.png?raw=true"
                         alt="Event Preview"
                         className="hero-image"
                     />
