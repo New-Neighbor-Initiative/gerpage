@@ -45,45 +45,66 @@
         "interns": [
             {
                 "name": "Amar",
-                "position": "Software Engineering Intern",
+                "position": "Communications",
                 "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Amar.png?raw=true",
-                "bio": "Alice is a computer science student passionate about developing innovative software solutions."
+                "food": "Tsuivan",
+                "hobby": "Basketball, Skiing",
+                "study": "International Business, Finance",
+                "linkedin": "https://www.linkedin.com/in/amar-tuvshintugs-888136341/"
             },
             {
                 "name": "Anka Undraa",
-                "position": "Marketing Intern",
+                "position": "Marketing & Design",
                 "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Anka_Undraa.jpg?raw=true",
-                "bio": "Bob is studying marketing and is excited to contribute to the company's outreach efforts."
+                "food": "Shagai Games",
+                "hobby": "Volleyball, Cooking",
+                "study": "Civil Engineering, Urban Planning",
+                "linkedin": "https://www.linkedin.com/in/ariunkhur-undraa"
             },
             {
                 "name": "Anujin Enkhee",
-                "position": "Software Engineering Intern",
+                "position": "Tech",
                 "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Anujin_Enkhee.JPG?raw=true",
-                "bio": "Alice is a computer science student passionate about developing innovative software solutions."
+                "food": "Buuz, Niislel Salat",
+                "hobby": "Reading",
+                "study": "Computer Science",
+                "linkedin": "https://www.linkedin.com/in/anujinenkhee"
             },
             {
                 "name": "Anuka San",
-                "position": "Marketing Intern",
+                "position": "Marketing & Design",
                 "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Anuka_San.jpeg?raw=true",
-                "bio": "Bob is studying marketing and is excited to contribute to the company's outreach efforts."
+                "food": "Naadam",
+                "hobby": "Journaling",
+                "study": "Creative Technology Design, Business Marketing",
+                "linkedin": "http://linkedin.com/in/anujin-sanjaajamts-8b2707219"
             },
             {
                 "name": "Bolor Amarbayar",
-                "position": "Software Engineering Intern",
+                "position": "Public Speaking",
                 "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Bolor_Amarbayar.jpeg?raw=true",
-                "bio": "Alice is a computer science student passionate about developing innovative software solutions."
+                "food": "Buuz",
+                "hobby": "Animation, Reading, Baking",
+                "study": "Anthropology, Public Policy",
+                "linkedin": "https://www.linkedin.com/in/bolor-amarbayar-92229b2ab"
             },
             {
                 "name": "Jargalan Enkh-Otgon",
-                "position": "Marketing Intern",
+                "position": "Tech",
                 "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Jargalan_Enkh-Otgon.jpeg?raw=true",
-                "bio": "Bob is studying marketing and is excited to contribute to the company's outreach efforts."
+                "food": "Niislel Salad",
+                "hobby": "Chess",
+                "study": "Computer Science",
+                "linkedin": "https://www.linkedin.com/in/jargalan-enkh-otgon-0b123a382/"
             },
-                        {
-                "name": "Tsetsenbileg Mendbileg",
-                "position": "Marketing Intern",
+            {
+                "name": "Tsetsenbileg Ankh-Erdene",
+                "position": "Public Speaking",
                 "photo": "https://github.com/NNIDC/object-store/blob/5d78e8db758b7d104da501748d806252de03fb29/headshots/NNI2026_Tsetsenbileg_Mendbileg.jpeg?raw=true",
-                "bio": "Bob is studying marketing and is excited to contribute to the company's outreach efforts."
+                "food": "Khorkhog",
+                "hobby": "Lacrosse",
+                "study": "Neuroscience",
+                "linkedin": ""
             }
         ]
     }
