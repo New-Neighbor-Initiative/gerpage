@@ -1,37 +1,104 @@
-.contact-section{
+.contact-section {
     height: max-content;
     background-color: #FECD43;
+    padding-bottom: 50px;
 }
 
-#top-section{
+#top-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 100px;
+    padding: 100px 20px;
     color: black;
 }
 
-.contact-title{
+.contact-title {
     text-transform: uppercase;
+    margin-bottom: 2rem;
 }
 
-.contact-inputs{
+.contact-card {
+    position: relative;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: transparent;
+    /* Or a slight tint if needed, but authentic usually means the pattern frames the content */
+    max-width: 600px;
+    width: 100%;
+}
+
+.corner-detail {
+    position: absolute;
+    width: 60px;
+    /* Adjust size as needed */
+    height: 60px;
+    pointer-events: none;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+    transform: rotate(0deg);
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+    transform: rotate(270deg);
+}
+
+.contact-inputs {
     height: 50px;
-    width: 400px;
+    width: 100%;
     border: none;
     outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    /* Slight roundness */
+    font-size: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
-#message-area{
+#message-area {
     height: 140px;
 }
 
-.contact-button{
+.contact-button {
     font-size: 20px;
     background-color: #1B343D;
     color: white;
     border: none;
     border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+    background-color: #14262d;
+}
+
+.footnote-section {
+    display: flex;
+    justify-content: center;
     padding: 20px;
+}
+
+.footnote-section img {
+    max-height: 80px;
 }
