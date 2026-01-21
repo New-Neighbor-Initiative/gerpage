@@ -73,6 +73,8 @@ button:focus-visible {
 
 */ html {
   scroll-behavior: smooth;
+  background-color: #1B343D;
+  /* Matches Footer color to prevent white space on bottom scroll */
 }
 
 #home-section,
@@ -89,4 +91,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
   overflow-x: hidden;
+  background-color: #1B343D;
+  /* Footer Color for seamless overscroll */
 }
