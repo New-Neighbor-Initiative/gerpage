@@ -2,50 +2,67 @@ import "./Events.css"
 import { useEffect, useState } from "react";
 import { fetch as apiFetch } from "../api/api";
 
-function Events(){
+function Events() {
     const [events, setEvents] = useState<any>(null);
     useEffect(() => {
         apiFetch("/data/event_details.json")
-          .then(res => res.json())
-          .then(data => setEvents(data))
-          .catch(() => console.error("Failed to load about data"));
-      }, []);
+            .then(res => res.json())
+            .then(data => setEvents(data))
+            .catch(() => console.error("Failed to load about data"));
+    }, []);
+
+    const scrollTo = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+        e.preventDefault();
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+        }
+    };
 
     if (!events) return <p>Loading...</p>;
 
-    return(
-        <section id="event-section">
-            <h1 className="events-title">{events.title}</h1>
-            <div className="event-image-wrapper">
-                <img
-                src="/img/events-placer.webp"
-                alt="Upcoming Event"
-                className="event-image"
-                />
+    return (
+        <section id="home-section">
+            <div className="hero-content">
+                <div className="hero-text-block">
+                    <span className="hero-eyebrow">Upcoming Event</span>
+                    <h1 className="hero-title">{events.title}</h1>
+                    <p className="hero-description">{events.description}</p>
+                    <div className="hero-cta-group">
+                        <a href="#schedule-section" className="cta-button primary" onClick={(e) => scrollTo(e, "schedule-section")}>View Schedule</a>
+                        <a href="#contact-section" className="cta-button secondary" onClick={(e) => scrollTo(e, "contact-section")}>RSVP Now</a>
+                    </div>
+                </div>
+                <div className="hero-image-wrapper">
+                    <img
+                        src="/img/events-placer.webp"
+                        alt="Event Preview"
+                        className="hero-image"
+                    />
+                </div>
             </div>
 
             <section id="schedule-section">
-                <h2 className="schedule-title">Schedule</h2>
-                <div className="schedule-day">
-                <h3 className="schedule-date">{events.content.date}</h3>
-                <hr className="schedule-divider" />
-
-                {events.content.agenda.map((item: any, index: number) => (
-                    <div key={index} className="schedule-row">
-                    <div className="schedule-time">{item.time}</div>
-
-                    <div className="schedule-info">
-                        <div className="schedule-event">{item.activity}</div>
-                        <div className="schedule-location">
-                        {events.content.location.venue}
-                        </div>
+                <h2 className="schedule-title">Event Schedule</h2>
+                <div className="schedule-card">
+                    <div className="schedule-header">
+                        <span className="schedule-date">{events.content.date}</span>
+                        <span className="schedule-location">{events.content.location.venue}</span>
                     </div>
+
+                    <div className="schedule-timeline">
+                        {events.content.agenda.map((item: any, index: number) => (
+                            <div key={index} className="schedule-row">
+                                <div className="time-col">{item.time}</div>
+                                <div className="info-col">
+                                    <h4 className="activity-name">{item.activity}</h4>
+                                </div>
+                            </div>
+                        ))}
                     </div>
-                ))}
                 </div>
             </section>
         </section>
-
     )
 }
 
