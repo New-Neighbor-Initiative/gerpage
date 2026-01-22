@@ -8,7 +8,7 @@ function Footnote() {
             <div className="footer-content">
                 <div className="footer-links">
                     <a href="#home-section">Home</a>
-                    <a href="#schedule-section">Events</a>
+
                     <a href="#about-section">About</a>
                     <a href="#team-section">Team</a>
                     <a href="#contact-section">Contact</a>

@@ -80,9 +80,8 @@ button:focus-visible {
 #home-section,
 #about-section,
 #team-section,
-#contact-section,
-#schedule-section {
-  scroll-margin-top: 100px;
+#contact-section {
+  scroll-margin-top: 80px;
 }
 
 body {

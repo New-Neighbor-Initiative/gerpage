@@ -65,7 +65,7 @@ function NavBar() {
                 {/* Desktop Navigation */}
                 <div className="desktop-nav">
                     <button className="navbar-link" onClick={() => scrollTo("home-section")}>Home</button>
-                    <button className="navbar-link" onClick={() => scrollTo("schedule-section")}>Events</button>
+
                     <button className="navbar-link" onClick={() => scrollTo("about-section")}>About Us</button>
                     <button className="navbar-link" onClick={() => scrollTo("team-section")}>Team</button>
                     <button className="navbar-link" onClick={() => scrollTo("contact-section")}>Contact</button>
@@ -83,7 +83,7 @@ function NavBar() {
                 {/* Mobile Navigation */}
                 <div className={`mobile-nav ${isMobileMenuOpen ? "active" : ""}`}>
                     <button className="mobile-link" onClick={() => scrollTo("home-section")}>Home</button>
-                    <button className="mobile-link" onClick={() => scrollTo("schedule-section")}>Events</button>
+
                     <button className="mobile-link" onClick={() => scrollTo("about-section")}>About Us</button>
                     <button className="mobile-link" onClick={() => scrollTo("team-section")}>Team</button>
                     <button className="mobile-link" onClick={() => scrollTo("contact-section")}>Contact</button>

@@ -1,99 +1,54 @@
 #about-section {
-    min-height: 100vh;
-    width: 100%;
-    background-color: #ffffff;
-    color: #1B343D;
-    padding: 6rem 0 0 0;
-  }
-  
-  .about-container {
-    width: min(1200px, 92vw);
-    margin: 0 auto;
-  }
-  
-  .about-title {
-    /*font-size: clamp(2.4rem, 4.5vw, 3.6rem);*/
-    font-weight: 600;
-    font-size: 3.2em;
-    line-height: 1.1;
-    margin: 0 0 6rem 0;
-    text-align: center;
-  }
-  
-  /* Our Mission Section */
-  .mission-block {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  .mission-accent {
-    width: 8%;
-    max-width: 900px;
-    height: 2px;        /* thinner */
-    background: #1B343D;
-    border-radius: 999px;
-    margin: 0 auto 1.75rem auto;
-    opacity: 0.95;
-  }
-  
-  .mission-title {
-    font-size: clamp(2rem, 4vw, 2.5rem);
-    font-weight: 600;
-    margin: 0 0 1.25rem 0;
-  }
-  
-  .mission-text {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin: 0 auto;
-    max-width: 70ch;
-    opacity: 0.95;
-    margin-bottom: 6rem;
-  }
-  
-/*Story section*/
-.story-section {
-    margin-top: 3rem;
-    padding: 2rem 0 4rem 0;
-    }
-    
-    .story-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    }
-    
-    .story-text {
-    color: #1B343D;
-    }
-    
-    .story-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0;
-    text-align: left;
-    }
-    
-    .story-text p {
-    margin: 0 0 1.25rem 0;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    text-align: left;
-    max-width: 70ch;
-    }
-    
-    .story-photoWrap {
-    display: flex;
-    justify-content: flex-end; /* pushes image to the right */
-    }
-    
-    .story-photo {
-    width: 100%;
-    max-width: 680px;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 14px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    }
+  min-height: 100vh;
+  width: 100%;
+  background-color: #ffffff;
+  color: #1B343D;
+  padding: 6rem 0 0 0;
+}
+
+.about-container {
+  width: min(1200px, 92vw);
+  margin: 0 auto;
+}
+
+.about-title {
+  /*font-size: clamp(2.4rem, 4.5vw, 3.6rem);*/
+  font-weight: 600;
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin: 0 0 6rem 0;
+  text-align: center;
+}
+
+/* Our Mission Section */
+.mission-block {
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.mission-accent {
+  width: 8%;
+  max-width: 900px;
+  height: 2px;
+  /* thinner */
+  background: #1B343D;
+  border-radius: 999px;
+  margin: 0 auto 1.75rem auto;
+  opacity: 0.95;
+}
+
+.mission-title {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 600;
+  margin: 0 0 1.25rem 0;
+}
+
+.mission-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin: 0 auto;
+  max-width: 70ch;
+  opacity: 0.95;
+  margin-bottom: 6rem;
+}

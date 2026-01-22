@@ -33,9 +33,6 @@ function Contact() {
                     <button type="submit" className="contact-button">SEND</button>
                 </div>
             </div>
-            <div className="footnote-section">
-                <img src="https://drive.google.com/drive/u/0/folders/1zXwKehlfIlkOZCNajgZ4PKXNq6U1mTJD" alt="logo" />
-            </div>
         </div>
     )
 }

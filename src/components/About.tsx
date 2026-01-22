@@ -1,5 +1,5 @@
 import "./About.css";
-import horse from "../assets/horse.svg";
+
 import { useEffect, useState } from "react";
 import { fetch as apiFetch } from "../api/api";
 
@@ -25,42 +25,7 @@ function About() {
           <h2 className="mission-title">Our Mission</h2>
           <p className="mission-text">{about.content.text}</p>
 
-          <div className="mission-accent" />
-          <h2 className="mission-title">Our Story</h2>
         </div>
-
-        <section className="story-section">
-          <div className="story-grid">
-            <div className="story-text">
-
-              <h2 className="story-title">New Neighbor Initiative</h2>
-              <p>
-                NNI Engineering DC is dedicated to fostering innovation and excellence in
-                engineering. Our team is composed of passionate professionals committed to
-                delivering top-notch solutions and services to our clients. We believe in
-                the power of collaboration, integrity, and continuous learning to drive success
-                and make a positive impact in the industry.
-              </p>
-
-              <p>
-                NNI Engineering DC is dedicated to fostering innovation and excellence in
-                engineering. Our team is composed of passionate professionals committed to
-                delivering top-notch solutions and services to our clients. We believe in
-                the power of collaboration, integrity, and continuous learning to drive success
-                and make a positive impact in the industry.
-              </p>
-
-            </div>
-
-            <div className="story-photoWrap">
-              <img
-                className="story-photo"
-                src={horse}
-                alt="NNI Horse Illustration"
-              />
-            </div>
-          </div>
-        </section>
 
       </div>
     </section>

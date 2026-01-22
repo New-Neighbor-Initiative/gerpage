@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   z-index: 1000;
-  padding: 0.75rem 0;
+  padding: 0.2rem 0;
   transition: transform 0.3s ease-in-out, background 0.3s ease, padding 0.3s ease;
   /* Glassmorphism Base (more prominent when scrolled) */
   background: rgba(255, 255, 255, 0.75);
@@ -19,7 +19,7 @@
 }
 
 .navbar.navbar-scrolled {
-  padding: 0.5rem 0;
+  padding: 0.2rem 0;
   background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
@@ -40,7 +40,7 @@
 }
 
 .logo-img {
-  height: 50px;
+  height: 70px;
   width: auto;
   transition: height 0.3s ease;
 }
