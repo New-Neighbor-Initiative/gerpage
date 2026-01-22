@@ -1,107 +1,230 @@
-#team-section{
-    height: max-content;
-    background-color: #FECD43;
-
+/* Modern Team Section Styles */
+#team-section {
+    padding: 60px 20px;
+    background-color: #f8fafc;
+    /* Slate-50 */
+    min-height: 100vh;
 }
 
-.bubble-ppl {
-    background-color: white;
-    border-radius: 10px;
-    width: 80%;
-    padding: 5px 0;
-    margin: 50px 5px 10px 5px;
-    height: 15rem;
-    width: 10rem;
-    /* display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; */
-}
-
-.bubble-ppl img{
-    max-height: 7rem;
-    margin-top: 1rem;
-    border-radius: 10px;
-}
-
-.dept{       
+#team-section h1 {
     text-align: center;
-    align-items: center;
-    background-color: antiquewhite;
-    flex: 0 0 100%;
-    scroll-snap-align: start;
-    width: 30rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1e293b;
+    /* Slate-800 */
+    margin-bottom: 3rem;
+    letter-spacing: -0.025em;
+}
+
+.dept {
+    width: 100%;
+    margin-bottom: 4rem;
 }
 
 .dept-title {
-    text-transform: uppercase; 
+    text-align: center;
+    font-size: 1.8rem;
+    color: #334155;
+    /* Slate-700 */
+    margin-bottom: 2rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    width: 100%;
 }
 
+.dept-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #3b82f6;
+    /* Blue-500 */
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Grid Layout for People */
 .dept-ppl {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
-    overflow-x: visible;   
-    margin: 0;             
-    padding: 0 5rem;       
-    flex-wrap: wrap;       
-  }
-  
-
-
-/* slider */
-.container {
-    padding: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
 }
+
+/* Person Card */
+.bubble-ppl {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bubble-ppl:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Image Container */
+.img-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background-color: #e2e8f0;
+}
+
+.img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.bubble-ppl:hover .img-container img {
+    transform: scale(1.05);
+}
+
+/* Info Section */
+.info {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.bubble-ppl h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0 0 0.5rem 0;
+}
+
+.position {
+    font-size: 0.95rem;
+    color: #3b82f6;
+    /* Blue-500 */
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.bio {
+    font-size: 0.95rem;
+    color: #64748b;
+    /* Slate-500 */
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Intern Details */
+.intern-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: auto;
+    /* Push to bottom */
+}
+
+.detail {
+    font-size: 0.9rem;
+    color: #475569;
+    /* Slate-600 */
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.icon {
+    margin-right: 0.75rem;
+    font-size: 1.1rem;
+    min-width: 1.5rem;
+    text-align: center;
+}
+
+.linkedin-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #0a66c2;
+    /* LinkedIn Blue */
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    font-size: 0.9rem;
+    text-align: center;
+    transition: background-color 0.2s;
+    align-self: flex-start;
+}
+
+.linkedin-link:hover {
+    background-color: #004182;
+}
+
+/* Slide buttons adjustment if keeping the slider structure, 
+   but grid is preferred for 'Our Team' unless it's a huge list. 
+   The component uses a slider structure. 
+   If the slider is still active, we need to ensure the grid works inside it 
+   or the slider CSS mimics a full-page view.
+   
+   The provided React code renders a 'slider-content' div.
+   We probably want to disable the horizontal scrolling behavior for the interns section
+   if we want a grid. 
+   
+   The component maps `team.content` entries to `.dept`.
+   If we want all departments visible vertically, we should remove the horizontal slider logic styles
+   and just let them stack.
+   
+   Let's override the slider styles to just stack vertically for a better 'Our Team' page.
+*/
 
 .slider-wrapper {
-    position: relative;
-    /* max-width: 48rem; */
-    max-width: max-content;
-    margin: 0 auto;
+    /* Disable slider horizontal scroll for a standard page layout */
+    max-width: 100%;
 }
 
-
-
 .slider {
-    display: flex;
-    height: max-content;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    border-radius: 0.5rem;
-    /* hide scrollbar */
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* IE/Edge */
+    flex-direction: column;
+    /* Stack departments vertically */
+    overflow: visible;
+    scroll-snap-type: none;
+    height: auto;
+    display: block;
+    /* Normal block layout */
 }
 
 .slider-content {
-    display: flex;
+    flex-direction: column;
+    /* Stack departments */
+    width: 100%;
 }
-
-.slider::-webkit-scrollbar {
-    display: none; /* Chrome/Safari */
-}
-
-
 
 .slide-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
-    border: none;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 22px;
+    display: none;
+    /* Hide slider arrows */
 }
 
-.slide-btn.prev {
-    left: 10px;
-}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #team-section {
+        padding: 40px 15px;
+    }
 
-.slide-btn.next {
-    right: 10px;
+    .dept-ppl {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .dept-title {
+        font-size: 1.5rem;
+    }
 }

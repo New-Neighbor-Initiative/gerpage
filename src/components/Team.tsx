@@ -30,7 +30,7 @@ function Team() {
     slider.scrollBy({ left: -slider.clientWidth, behavior: "smooth" });
   };
 
-  
+
 
   if (!team) return <p>Loading...</p>;
 
@@ -57,11 +57,31 @@ function Team() {
 
                   <div className="dept-ppl">
                     {people.map((person: any) => (
-                        <div key={person.name} className="bubble-ppl">
+                      <div key={person.name} className="bubble-ppl">
+                        <div className="img-container">
                           <img src={person.photo} alt={person.name} />
-                          <h3>{person.position}</h3>
-                          <p>{person.name}</p>
                         </div>
+                        <div className="info">
+                          <h3>{person.name}</h3>
+                          <p className="position">{person.position}</p>
+
+                          {person.bio ? (
+                            <p className="bio">{person.bio}</p>
+                          ) : (
+                            <div className="intern-details">
+                              {person.study && <p className="detail"><span className="icon">🎓</span> {person.study}</p>}
+                              {person.food && <p className="detail"><span className="icon">🥟</span> {person.food}</p>}
+                              {person.hobby && <p className="detail"><span className="icon">🎨</span> {person.hobby}</p>}
+                            </div>
+                          )}
+
+                          {person.linkedin && (
+                            <a href={person.linkedin} target="_blank" rel="noopener noreferrer" className="linkedin-link">
+                              Connect on LinkedIn
+                            </a>
+                          )}
+                        </div>
+                      </div>
                     ))}
                   </div>
                 </div>

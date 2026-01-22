@@ -24,10 +24,10 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden; /* Prevent accidental horizontal scroll */
 }
 
 h1 {
@@ -46,9 +46,11 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -59,10 +61,35 @@ button:focus-visible {
     color: #213547;
     background-color: #ffffff;
   }
+
   a:hover {
     color: #747bff;
   }
+
   button {
     background-color: #f9f9f9;
   }
-} */
+}
+
+*/ html {
+  scroll-behavior: smooth;
+  background-color: #1B343D;
+  /* Matches Footer color to prevent white space on bottom scroll */
+}
+
+#home-section,
+#about-section,
+#team-section,
+#contact-section {
+  scroll-margin-top: 80px;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  min-width: 320px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-color: #1B343D;
+  /* Footer Color for seamless overscroll */
+}
