@@ -19,21 +19,13 @@
     margin: 0 0 6rem 0;
     text-align: center;
   }
-  
-  /* Our Mission Section */
-  .mission-block {
-    text-align: center;
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
+
   .mission-accent {
     width: 8%;
-    max-width: 900px;
-    height: 2px;        /* thinner */
+    height: 2px;
     background: #1B343D;
     border-radius: 999px;
-    margin: 0 auto 1.75rem auto;
+    margin: 0 0 1.75rem 0;
     opacity: 0.95;
   }
   
@@ -46,54 +38,29 @@
   .mission-text {
     font-size: 1.2rem;
     line-height: 1.8;
-    margin: 0 auto;
+    margin: 0;
     max-width: 70ch;
     opacity: 0.95;
     margin-bottom: 6rem;
   }
+
+  .mission-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  }
   
-/*Story section*/
-.story-section {
-    margin-top: 3rem;
-    padding: 2rem 0 4rem 0;
-    }
-    
-    .story-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 4rem;
-    align-items: center;
-    }
-    
-    .story-text {
-    color: #1B343D;
-    }
-    
-    .story-title {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin: 0;
-    text-align: left;
-    }
-    
-    .story-text p {
-    margin: 0 0 1.25rem 0;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    text-align: left;
-    max-width: 70ch;
-    }
-    
-    .story-photoWrap {
-    display: flex;
-    justify-content: flex-end; /* pushes image to the right */
-    }
-    
-    .story-photo {
-    width: 100%;
-    max-width: 680px;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-    border-radius: 14px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
-    }
+  .mission-photoWrap {
+  display: flex;
+  justify-content: flex-end;
+  }
+  
+  .mission-photo {
+  width: 100%;
+  max-width: 680px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+  }

@@ -15,52 +15,24 @@ function About(){
     if (!about) return <p>Loading...</p>;
 
     return (
-        <section id="about-section">
-          <div className="about-container">
-            <h1 className="about-title">{about.title}</h1>
-    
-            <div className="mission-block">
-              <div className="mission-accent" />
-              <h2 className="mission-title">Our Mission</h2>
-              <p className="mission-text">{about.content.text}</p>
-
-              <div className="mission-accent" />
-              <h2 className="mission-title">Our Story</h2>
-            </div>
-
-            <section className="story-section">
-                <div className="story-grid">
-                    <div className="story-text">
-
-                    <h2 className="story-title">New Neighbor Initiative</h2>
-                    <p>
-                        NNI Engineering DC is dedicated to fostering innovation and excellence in 
-                        engineering. Our team is composed of passionate professionals committed to 
-                        delivering top-notch solutions and services to our clients. We believe in 
-                        the power of collaboration, integrity, and continuous learning to drive success 
-                        and make a positive impact in the industry.
-                    </p>
-
-                    <p>
-                        NNI Engineering DC is dedicated to fostering innovation and excellence in 
-                        engineering. Our team is composed of passionate professionals committed to 
-                        delivering top-notch solutions and services to our clients. We believe in 
-                        the power of collaboration, integrity, and continuous learning to drive success 
-                        and make a positive impact in the industry.
-                    </p>
-
+      <section id="about-section">
+        <div className="about-container">
+          <h1 className="about-title">{about.title}</h1>
+            <section>
+              <div className="mission-grid">
+                <div className="mission-photoWrap">
+                  <img
+                      className="mission-photo"
+                      src="/img/logo.png"
+                      alt="Team photo"/>
                     </div>
-
-                    <div className="story-photoWrap">
-                    <img
-                        className="story-photo"
-                        src="/img/logo.png"
-                        alt="Team photo"
-                    />
+                    <div className="mission-content">
+                      <h2 className="mission-title">Our Mission</h2>
+                      <div className="mission-accent" />
+                      <p className="mission-text">{about.content.text}</p>
                     </div>
                 </div>
                 </section>
-
           </div>
         </section>
       );
