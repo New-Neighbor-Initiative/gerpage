@@ -18,7 +18,7 @@ function NavBar(){
 
             <div className="right">
                 <nav className="navbar-inner">
-                    <button className="navbar-link" onClick={() => scrollTo("home-section")}>
+                    <button className="navbar-link" onClick={() => scrollTo("event-section")}>
                     Home
                     </button>
 
