@@ -29,10 +29,6 @@ function NavBar(){
                     <button className="navbar-link" onClick={() => scrollTo("team-section")}>
                     Team
                     </button>
-
-                    <button className="navbar-link" onClick={() => scrollTo("event-section")}>
-                    Events
-                    </button>
                     
                     <button className="navbar-link" onClick={() => scrollTo("contact-section")}>
                     Contact
