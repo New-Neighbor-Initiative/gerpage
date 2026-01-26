@@ -21,10 +21,7 @@ function About(){
             <section>
               <div className="mission-grid">
                 <div className="mission-photoWrap">
-                  <img
-                      className="mission-photo"
-                      src="/img/logo.png"
-                      alt="Team photo"/>
+                  <img className="mission-photo" src={about.content.photo} alt="About Photo"/>
                     </div>
                     <div className="mission-content">
                       <h2 className="mission-title">Our Mission</h2>

@@ -29,16 +29,12 @@ function Events(){
                 <div className="events-description">
                     <p>{events.description}</p>
                 </div>
+                <a href="#contact-section" className="rsvp" 
+                onClick={(e) => scrollTo(e, "contact-section")}>RSVP Now</a>
                 <div className="events-photoWrap">
-                    <img
-                        className="events-photo"
-                        src="/img/logo.png"
-                        alt="Team photo"
-                    />
+                    <img className="events-photo" src={events.content.photo} alt="Flyer"/>
                 </div>
             </div>
-            <a href="#contact-section" className="rsvp" 
-                onClick={(e) => scrollTo(e, "contact-section")}>RSVP Now</a>
         </section>
     )
 }

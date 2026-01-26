@@ -3,7 +3,7 @@
     width: 100%;
     background-color: #ffffff;
     color: #1B343D;
-    padding: 6rem 0 0 0;
+    padding: 6rem 0 0;
   }
   
   .about-container {
@@ -41,7 +41,7 @@
     margin: 0;
     max-width: 70ch;
     opacity: 0.95;
-    margin-bottom: 6rem;
+    margin-bottom: 0;
   }
 
   .mission-grid {
