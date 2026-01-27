@@ -1,111 +1,99 @@
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
 import "./Team.css";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { fetch as apiFetch } from "../api/api";
+
 
 function Team() {
   const [team, setTeam] = useState<any>(null);
-
-  // ✅ ref to the slider div
-  const sliderRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     apiFetch("/data/team.json")
       .then((res) => res.json())
       .then((data) => setTeam(data))
-      .catch(() => console.error("Failed to load about data"));
+      .catch(() => console.error("Failed to load team data"));
   }, []);
 
-  const scrollNext = () => {
-    const slider = sliderRef.current;
-    if (!slider) return;
-
-    slider.scrollBy({ left: slider.clientWidth, behavior: "smooth" });
-  };
-
-  const scrollPrev = () => {
-    const slider = sliderRef.current;
-    if (!slider) return;
-
-    slider.scrollBy({ left: -slider.clientWidth, behavior: "smooth" });
-  };
-
-
-
   if (!team) return <p>Loading...</p>;
+
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 1, // One department per slide
+    slidesToScroll: 1,
+  };
 
   return (
     <div id="team-section">
       <h1>{team.title}</h1>
 
       <section className="container">
-        <div className="slider-wrapper">
-          <button
-            className="slide-btn prev"
-            aria-label="Previous slide"
-            onClick={scrollPrev}
-            type="button"
-          >
-            &#10094;
-          </button>
+        <Slider {...settings}>
+          {Object.entries(team.content).map(([department, people]: any) => (
+            <div key={department}>
+              <div className="dept">
+                <h2 className="dept-title">{department.replace("_", " ")}</h2>
 
-          <div className="slider" ref={sliderRef}>
-            <div className="slider-content">
-              {Object.entries(team.content).map(([department, people]: any) => (
-                <div key={department} className="dept">
-                  <h2 className="dept-title">{department.replace("_", " ")}</h2>
-
-                  <div className="dept-ppl">
-                    {people.map((person: any) => (
-                      <div key={person.name} className="bubble-ppl">
-                        <div className="img-container">
-                          <img src={person.photo} alt={person.name} />
-                        </div>
-                        <div className="info">
-                          <h3>{person.name}</h3>
-                          <p className="position">{person.position}</p>
-
-                          {person.bio ? (
-                            <p className="bio">{person.bio}</p>
-                          ) : (
-                            <div className="intern-details">
-                              {person.study && <p className="detail"><span className="icon">🎓</span> {person.study}</p>}
-                              {person.food && <p className="detail"><span className="icon">🥟</span> {person.food}</p>}
-                              {person.hobby && <p className="detail"><span className="icon">🎨</span> {person.hobby}</p>}
-                            </div>
-                          )}
-
-                            {person.linkedin ? (
-                              <a
-                                href={person.linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="linkedin-link"
-                              >
-                                Connect on LinkedIn
-                              </a>
-                            ) : (
-                              <div className="linkedin-placeholder"></div>
-                            )}
-
-                        </div>
+                <div className="dept-ppl">
+                  {people.map((person: any, idx: number) => (
+                    <div key={`${department}-${person.name}-${idx}`} className="bubble-ppl">
+                      <div className="img-container">
+                        <img src={person.photo} alt={person.name} />
                       </div>
-                    ))}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
 
-          <button
-            className="slide-btn next"
-            aria-label="Next slide"
-            onClick={scrollNext}
-            type="button"
-          >
-            &#10095;
-          </button>
-        </div>
+                      <div className="info">
+                        <h3>{person.name}</h3>
+                        <p className="position">{person.position}</p>
+
+                        {person.bio ? (
+                          <p className="bio">{person.bio}</p>
+                        ) : (
+                          <div className="intern-details">
+                            {person.study && (
+                              <p className="detail">
+                                <span className="icon">🎓</span>
+                                {person.study}
+                              </p>
+                            )}
+                            {person.food && (
+                              <p className="detail">
+                                <span className="icon">🥟</span>
+                                {person.food}
+                              </p>
+                            )}
+                            {person.hobby && (
+                              <p className="detail">
+                                <span className="icon">🎨</span>
+                                {person.hobby}
+                              </p>
+                            )}
+                          </div>
+                        )}
+
+                        {person.linkedin ? (
+                          <a
+                            href={person.linkedin}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="linkedin-link"
+                          >
+                            Connect on LinkedIn
+                          </a>
+                        ) : (
+                          <div className="linkedin-placeholder" />
+                        )}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
+        </Slider>
       </section>
     </div>
   );
