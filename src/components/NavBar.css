@@ -1,48 +1,116 @@
 .navbar {
-  position: fixed; 
-  top: 0;          
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;    
+  width: 100%;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(15, 23, 42, 0.10);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+
+  transform: translateY(0);
+  transition: transform 240ms ease, background 240ms ease, box-shadow 240ms ease;
+}
+
+.navbar.hide {
+  transform: translateY(-110%);
+}
+
+.navbar_content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0.55rem 2rem;
+
   display: flex;
+  align-items: center;
   justify-content: space-between;
+  gap: 1rem;
+}
+
+.navbar_logo {
+  display: inline-flex;
   align-items: center;
-  padding: 0.5rem 2rem;
-  background-color: white;
-  z-index: 1000;   
-  
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-  padding: 0%;
-}
-
-.logo-img {
-  height: 60px;      
-  width: auto;
-}
-
-
-.right{
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-  margin-right: 100px;
-}
-
-.right button{
   text-decoration: none;
-  color: #1B343D;
+}
+
+.navbar_links {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
+.navbar_link {
+  appearance: none;
   background: none;
   border: none;
+  cursor: pointer;
+
   font-family: inherit;
-  font-size: 20px;
-  margin: auto 1.5rem;
+  font-size: 1.05rem;
+  font-weight: 550;
+  color: #1b343d;
+
+  padding: 0.45rem 0;
+  position: relative;
+  transition: color 160ms ease;
 }
 
+.navbar_link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
 
+  width: 0%;
+  height: 2px;
+  background: currentColor;
+  opacity: 0.9;
 
-.right button:hover {
-  text-decoration: underline; /* optional hover effect */
+  transition: width 220ms ease;
+}
+
+.navbar_link:hover {
+  color: #14262d;
+}
+
+.navbar_link:hover::after {
+  width: 100%;
+}
+
+.navbar_cta {
+  padding: 0.5rem 0.9rem;
+  border-radius: 10px;
+  border: 1px solid rgba(27, 52, 61, 0.22);
+  background: rgba(255, 255, 255, 0.55);
+}
+
+.navbar_cta::after {
+  display: none;
+}
+
+.navbar_cta:hover {
+  background: rgba(27, 52, 61, 0.08);
+}
+
+@media (max-width: 700px) {
+  .navbar_inner {
+    padding: 0.65rem 0.9rem;
+  }
+
+  .navbar_logo {
+    height: 38px;
+  }
+
+  .navbar_links {
+    gap: 0.15rem;
+  }
+
+  .navbar_link {
+    padding: 0.5rem 0.65rem;
+    font-size: 0.92rem;
+  }
 }
