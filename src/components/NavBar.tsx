@@ -12,7 +12,7 @@ function NavBar(){
         <nav className="navbar">
             <div className="logo">
                 <a href="/Home">
-                <img src="/img/logo.png" alt="NNI logo" className="logo-img" />
+                <img src="https://github.com/NNIDC/object-store/blob/5bc922b499dd37ac1d4f88ff63d87601a1105f6c/assets/logo.png?raw=true" alt="NNI logo" className="logo-img" />
                 </a>
             </div>
 
