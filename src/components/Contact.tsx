@@ -1,7 +1,6 @@
 import "./Contact.css"
 import { useEffect, useState } from "react";
 import { fetch as apiFetch } from "../api/api";
-import cornerDetail from "../assets/top_left_corner_detail.svg";
 
 function Contact() {
     const [contact, setContact] = useState<any>(null);
